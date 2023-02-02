@@ -21,3 +21,8 @@ Insira a seguinte tag html em qualquer página do seu projeto:
 
 ## Exemplo de telefone
 - para o telefone: (15) 98888 - 7777 usar o seguinte href="wa.me/5515988887777"
+
+## Acesso à uma página de exemplo
+
+[Acesso a página](https://fernando-fix.github.io/msg-btn)
+
