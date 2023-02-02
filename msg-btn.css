@@ -1,0 +1,63 @@
+.msg-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: #30ce40;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 10px #727272;
+    animation: msgpulse 1s ease infinite;
+}
+
+.msg-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.msg-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 0px;
+    transform: translate(2px, -2px) rotate(90deg);
+    width: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+}
+
+@keyframes msgpulse {
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(-2px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-2px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
